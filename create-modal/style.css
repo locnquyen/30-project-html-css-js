@@ -1,0 +1,85 @@
+:root {
+    --pink-color: #e26e70;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient( 45deg, rgb(65, 88, 208) 0%,
+     rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+     font-family:sans-serif;
+}
+
+.model{
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    width: 100%;
+    height: 100%    ;
+}
+
+.open-model{
+    padding: 20px 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 25px;
+}
+
+.model-inner{
+    background: white;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.model__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--pink-color);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.model__body{
+    padding: 15px;
+}
+
+.model__body h2{
+    color: var(--pink-color);
+    margin: 16px 0;
+}
+
+.model__footer{
+    padding: 15px;
+    text-align: right;
+}
+
+.model__footer button{
+    padding: 10px 20px;
+    background: var(--pink-color);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
